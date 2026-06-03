@@ -64,7 +64,7 @@ function blackjack() {
 	
 }
 
-funct dealCard() {
+function dealCard() {
 	return Math.floor(Math.random() * 10) + 1;
 }
 
