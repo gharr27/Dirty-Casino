@@ -1,0 +1,45 @@
+dialog {
+	width: 80%;
+	max-width: 550px;
+	height: 80%;
+	max-height: 700px;
+	background-color: darkgreen;
+	border: none;
+	text-align: center;
+}
+
+.container {
+	display: grid;
+	grid-template-areas:
+		"dealer"
+		"hand"
+		"options";
+	grid-template-rows: 8fr 2fr 1fr;
+	grid-template-columns: 1fr;
+	background-color: darkgreen;
+	padding: 10px;
+	place-content: center;
+}
+
+.container div {
+	#background-color: white;
+	padding: 10px;
+}
+
+.container div.dealer {
+	grid-area: dealer;
+	text-align: center;
+	background-color: blue; 
+}
+
+.container div.hand {
+	grid-area: hand;
+	text-align: center;
+	background-color: red; 
+}
+
+.container div.options {
+	grid-area: options;
+	text-align: center;
+	background-color: yellow; 
+}
